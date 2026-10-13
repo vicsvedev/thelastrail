@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Used by: xcodebuild -exportArchive ... -exportOptionsPlist ExportOptions.plist -allowProvisioningUpdates
+  destination = export  -> writes a local .ipa only (nothing is sent to Apple)
+  destination = upload  -> uploads to App Store Connect (only when you intend to)
+  Requires a paid Apple Developer Program team. Set teamID to your paid team's ID if it differs.
+-->
+<plist version="1.0">
+<dict>
+	<key>method</key>
+	<string>app-store-connect</string>
+	<key>destination</key>
+	<string>export</string>
+	<key>signingStyle</key>
+	<string>automatic</string>
+	<key>teamID</key>
+	<string>B8SM9PP3KC</string>
+	<key>uploadSymbols</key>
+	<true/>
+	<key>manageAppVersionAndBuildNumber</key>
+	<false/>
+</dict>
+</plist>
